@@ -1,11 +1,11 @@
 const reverse = (phrase) => {
-    let nemPhrase = ''
+  let nemPhrase = "";
 
-    for (let i = phrase.length - 1; i>=0; i--){
-        nemPhrase += phrase[i]
-    }
+  for (let i = phrase.length - 1; i >= 0; i--) {
+    nemPhrase += phrase[i];
+  }
 
-    return nemPhrase
-}
+  return nemPhrase;
+};
 
-console.log(reverse('javascript'))
+console.log(reverse("javascript"));

@@ -9,14 +9,13 @@ function Fibonacci(number) {
 }
 
 function ValidateFibonacci(number) {
-    const verify = sequence.includes(number)
+  const verify = sequence.includes(number);
 
-    if(verify){
-        return `O valor: ${number} está contido na sequencia Fibonacci`
-    }
+  if (verify) {
+    return `O valor: ${number} está contido na sequencia Fibonacci`;
+  }
 
-    return `O valor: ${number} não está contido na sequencia Fibonacci`
-
+  return `O valor: ${number} não está contido na sequencia Fibonacci`;
 }
 
 console.log(Fibonacci(10));
