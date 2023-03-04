@@ -1,10 +1,12 @@
-const fs = require('fs')
+const jsonData= require('./dados.json'); 
+let bigValue = 0
 
-const path = './dados.json'
 
-fs.readFile(path, (data, err) => {
-    if(err) throw err
-
-    const user = JSON.parse(data)
-    console.log(user)
+const data = jsonData.map((value) => {
+    if(value.dia != 0)
+    if(value.valor > bigValue){
+        bigValue = value.valor
+    }
 })
+
+console.log(bigValue)
